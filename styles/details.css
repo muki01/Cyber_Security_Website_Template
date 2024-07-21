@@ -1,0 +1,11 @@
+/* -- Base Css -- */
+@import url(components/base.css); 
+
+/* -- Header -- */
+@import url(components/header.css);
+
+/* -- Detailss -- */
+@import url(components/detail.css);
+
+/* -- Footer -- */
+@import url(components/footer.css);

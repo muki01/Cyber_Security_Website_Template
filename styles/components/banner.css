@@ -1,0 +1,56 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 56em;
+    background: radial-gradient(rgba(18, 13, 73, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../images/bannner.gif");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 20px 0 rgba(17, 39, 105, 0.8);
+    z-index: 2;
+}
+
+.banner .textArea {
+    margin: 11em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner .textArea h2 {
+    color: #fff;
+    font-size: 5em;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0 5px 3px black;
+    /* text-shadow: 1px 2px 0px #007bcdcc,1px 5px 10px black; */
+}
+
+.banner .textArea h1 {
+    font-size: 10em;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: #007bcdcc;
+    text-shadow: 1px 5px 0px rgb(255, 255, 255), 1px 10px 10px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 840px) {
+    .banner{
+        font-size: 10px;
+    }
+    .banner .textArea h2{
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner{
+        font-size: 9px;
+    }
+}

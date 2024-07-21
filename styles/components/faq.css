@@ -1,0 +1,76 @@
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.3em;
+    background-color: #1B1525;
+    box-shadow: 0px 2px 20px rgba(17, 39, 105, 0.8);
+    border: 2px solid rgba(17, 39, 105, 0.8);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+section .faqCard {
+    margin-bottom: 30px;
+    background-color: #12102a;
+}
+
+section h1 {
+    font-size: 3em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+section .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border: 0.2em solid #2f9fea;
+    border-radius: 6px;
+    background:none;
+    cursor: pointer;
+}
+
+section .question h2{
+    font-size: 2.2em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+section .question i{
+    font-size: 3em;
+    color: #fff;
+}
+
+section .panel {
+    padding: 0px 10px;
+    border: 0.2em solid #2f9fea;
+    border-radius: 6px;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+section .faqCard.active .panel {
+    padding: 20px 10px;
+    height: 80px;
+    visibility: visible;
+}
+
+section .panel p{
+    font-size: 1.5em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+@media screen and (max-width: 840px) {
+    main{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,146 @@
+section .contactsArea {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10em;
+    padding: 3.3em;
+    background-color: #1B1525;
+    box-shadow: 0px 2px 20px rgba(17, 39, 105, 0.8);
+    border: 2px solid rgba(17, 39, 105, 0.8);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+section .contactsArea .addressArea {
+    position: relative;
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: 1fr;
+}
+
+section .contactsArea .addressArea::before {
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 3px;
+    right: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #2f9fea;
+}
+
+section .contactsArea .addressArea .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .contactsArea .addressArea .box i {
+    font-size: 3.8em;
+    color: #2f9fea;
+}
+
+section .contactsArea .addressArea .box h2 {
+    font-size: 2em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+section .contactsArea .addressArea .box p {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    color: #A8A2B3;
+    overflow-wrap: break-word;
+}
+
+
+section .contactsArea .messageArea h2 {
+    font-size: 3em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1em;
+    color: #2f9fea;
+    margin-bottom: 0.5em;
+}
+
+section .contactsArea .messageArea p {
+    font-size: 1.4em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+section .contactsArea .messageArea input,
+section .contactsArea .messageArea textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 1.4em 0;
+    height: 2em;
+    border: 0.2em solid #2f9fea;
+    border-radius: 6px;
+    outline: none;
+    background: none;
+    color: #fff;
+    font-size: 1.4em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    padding: 1.2em 1em;
+    resize: none;
+}
+
+section .contactsArea .messageArea textarea {
+    min-height: 9em;
+    padding-top: 0.5em;
+}
+
+section .contactsArea .messageArea .submitBtn {
+    color: #fff;
+    background: #2f9fea;
+    font-size: 1.6em;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6em 2.4em;
+    cursor: pointer;
+    transition: 0.12s ease-in-out;
+}
+
+section .contactsArea .messageArea .submitBtn:hover {
+    background: #237ebb;
+    scale: 1.05;
+}
+
+section .mapArea iframe {
+    border-radius: 30px;
+}
+
+
+@media screen and (max-width: 840px) {
+    main{
+        font-size: 11px;
+    }
+    section .contactsArea {
+        grid-template-columns: 1fr;
+        padding: 2em;
+    }
+
+    section .contactsArea .addressArea {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    section .contactsArea .addressArea::before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        left: 0%;
+        top: 120%;
+        background: #2f9fea;
+    }
+}

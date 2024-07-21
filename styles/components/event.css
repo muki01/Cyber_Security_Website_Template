@@ -1,0 +1,133 @@
+section .articleArea {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.3em;
+}
+
+section .articleArea article {
+    position: relative;
+    background-color: #1B1525;
+    box-shadow: 0px 2px 20px rgba(17, 39, 105, 0.8);
+    border: 2px solid rgba(17, 39, 105, 0.8);
+    border-radius: 8px;
+    z-index: 1;
+    transition: 0.12s ease-in-out;
+}
+section .articleArea article:hover{
+    scale: 1.05;
+}
+
+article .articleContainer {
+    padding: 0.5em 1.6em;
+}
+
+article img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    transition: 0.12s ease-in-out;
+}
+
+article img:hover {
+    opacity: 70%;
+}
+
+article hr {
+    margin-bottom: 0.3em;
+}
+
+article a {
+    display: inline-block;
+    color: #2F9FEA;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    font-size: 1.6em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.12s ease-in-out;
+}
+
+article a:hover {
+    color: #00d5ff;
+    text-shadow: 0 2px 20px #00d5ff50;
+}
+
+article h2 {
+    margin-bottom: 0.5em;
+    color: #fff;
+    font-size: 1.3em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+}
+
+article p {
+    color: #A8A2B3;
+    margin-bottom: 1.25em;
+    font-size: 1.3em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    /* TEXT LENGHT */
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+
+.paginationArea{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5em;
+}
+
+.pagination a {
+    padding: 0.6em 1.3em;
+    color: #fff;
+    font-size: 1.3em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+    transition: 0.12s ease-in-out;
+}
+
+.pagination a.active {
+    color: #fff;
+    background-color: #0574be;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #c0c0c0;
+    color: #000;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1400px) {
+    section .articleArea {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 840px) {
+    main{
+        font-size: 11px;
+    }
+    section .articleArea {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    section .articleArea {
+        grid-template-columns: 1fr;
+    }
+    section .articleArea article:hover{
+        scale: 1.02;
+    }
+    .pagination .page:nth-child(n+5) {
+        display: none;
+    }
+}
