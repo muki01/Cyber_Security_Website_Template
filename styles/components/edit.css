@@ -1,0 +1,86 @@
+main {
+    background: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../images/cyber2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.box {
+    position: relative;
+    padding: 2em;
+    width: 40em;
+    height: auto;
+    margin: auto;
+    background-color: #1B1525;
+    box-shadow: 0 2px 20px rgba(17, 39, 105, 0.8);
+    border: 2px solid rgba(17, 39, 105, 0.8);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+main .formName {
+    font-size: 3em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+main form label {
+    display: flex;
+    color: #fff;
+    margin-top: 1.6em;
+    font-size: 1.6em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 500;
+}
+
+main form input,
+main form textarea {
+    width: 100%;
+    padding: 1.2em 1em;
+    box-sizing: border-box;
+    height: 2em;
+    outline: none;
+    border: 3px solid #2f9fea;
+    border-radius: 6px;
+    font-size: 1.4em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background: none;
+    resize: none;
+}
+
+main form textarea {
+    min-height: 9em;
+    padding-top: 0.5em;
+}
+
+main form .submitBtn {
+    width: 100%;
+    height: 2.4em;
+    margin: 2.5em 0;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #2f9fea;
+    font-size: 1.8em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.12s ease-in-out;
+}
+main form .submitBtn:hover {
+    background: #237ebb;
+    scale: 1.02;
+}
+
+@media screen and (max-width: 640px) {
+    main{
+        font-size: 11px;
+    }
+    .box{
+        width: 28em;
+    }
+
+}
