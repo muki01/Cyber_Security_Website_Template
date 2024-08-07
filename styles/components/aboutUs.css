@@ -1,0 +1,47 @@
+section {
+    position: relative;
+    z-index: 1;
+    color: #ffff;
+    text-align: center;
+}
+
+.aboutUsArea h2 {
+    display: inline-block;
+    margin: 1em 0 1.2em;
+    font-size: 3.5em;
+    border-bottom: 3px solid rgba(0, 153, 255, 0.8);
+}
+
+.aboutUsArea p {
+    margin-bottom: 2em;
+    font-size: 1.8em;
+}
+
+.partnersArea h2 {
+    display: inline-block;
+    margin: 2em 0 1.2em;
+    font-size: 3.5em;
+    border-bottom: 3px solid rgba(0, 153, 255, 0.8);
+}
+
+.partnersArea .partners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.3em;
+}
+
+.partnersArea .partner img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+
+@media screen and (max-width: 840px) {
+    main{
+        font-size: 10px;
+    }
+    .partnersArea .partners {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
+}
