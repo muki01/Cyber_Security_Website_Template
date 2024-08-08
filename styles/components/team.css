@@ -15,8 +15,12 @@ section .cardsArea .card {
     /* background: url("../../images/bg2.png"); */
 }
 
+.card .profilePhoto{
+    text-align: center;
+}
+
 .card img {
-    width: 100%;
+    width: 90%;
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
