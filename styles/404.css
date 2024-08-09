@@ -1,0 +1,30 @@
+/* -- Base Css -- */
+@import url(components/base.css); 
+
+/* -- Header -- */
+@import url(components/header.css);
+
+/* -- Footer -- */
+@import url(components/footer.css);
+
+
+main .notFound {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .notFound h1 {
+    font-size: 150px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+main .notFound p {
+    font-size: 30px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
