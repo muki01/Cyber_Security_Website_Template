@@ -5,7 +5,7 @@
 @import url(components/header.css);
 
 /* -- Events -- */
-@import url(components/edit.css);
+@import url(components/edit-create.css);
 
 /* -- Footer -- */
 @import url(components/footer.css);

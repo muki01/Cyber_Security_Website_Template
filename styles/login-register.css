@@ -5,7 +5,7 @@
 @import url(components/header.css);
 
 /* -- Events -- */
-@import url(components/login.css);
+@import url(components/login-register.css);
 
 /* -- Footer -- */
 @import url(components/footer.css);
