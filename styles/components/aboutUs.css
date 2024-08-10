@@ -9,18 +9,24 @@ section {
     display: inline-block;
     margin: 1em 0 1.2em;
     font-size: 3.5em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
     border-bottom: 3px solid rgba(0, 153, 255, 0.8);
 }
 
 .aboutUsArea p {
     margin-bottom: 2em;
-    font-size: 1.8em;
+    font-size: 1.6em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
 }
 
 .partnersArea h2 {
     display: inline-block;
     margin: 2em 0 1.2em;
     font-size: 3.5em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
     border-bottom: 3px solid rgba(0, 153, 255, 0.8);
 }
 
