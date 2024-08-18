@@ -15,7 +15,7 @@ header .mainContainer {
     align-items: center;
 }
 
-header .navBar{
+header .navBar {
     z-index: 5;
 }
 
@@ -64,12 +64,39 @@ header .logoArea a img:hover {
     opacity: 70%;
 }
 
-header .rightSide{
+header .rightSide {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1.6em;
 }
+
+header .login-registerArea .loginBtn,
+header .login-registerArea .registerBtn {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 1px 5px #000;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 20px;
+    transition: 0.12s ease-in-out;
+}
+
+header .login-registerArea .loginBtn{
+    border: 3px solid #008cff;
+}
+
+header .login-registerArea .registerBtn {
+    background-color: #008cff;
+}
+
+header .login-registerArea a:hover{
+    opacity: 80%;
+}
+
 header .userArea {
     position: relative;
     display: inline-block;
@@ -108,7 +135,9 @@ header .userArea .dropDown ul {
 }
 
 header .userArea .dropDown ul li {
-    padding: 8px 20px;
+    margin: 8px 20px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #008cff;
 }
 
 header .userArea .dropDown ul li a {
@@ -177,10 +206,11 @@ header .menuArea .menuBtn.openmenu .line-2 {
 
 
 @media screen and (max-width: 1200px) {
-    header{
+    header {
         font-size: 11px;
     }
-    header .navBar ul{
+
+    header .navBar ul {
         gap: 3em;
     }
 }
@@ -208,7 +238,8 @@ header .menuArea .menuBtn.openmenu .line-2 {
     header .navBar.open {
         visibility: visible;
     }
-    header .navBar ul{
+
+    header .navBar ul {
         flex-direction: column;
         gap: 20px;
         padding: 20px;
