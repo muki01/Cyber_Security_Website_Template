@@ -7,7 +7,8 @@ main {
 .box {
     position: relative;
     padding: 2em;
-    width: 40em;
+    max-width: 40em;
+    width: 50%;
     height: auto;
     margin: auto;
     background-color: #1B1525;
@@ -80,7 +81,7 @@ main form .submitBtn:hover {
         font-size: 11px;
     }
     .box{
-        width: 28em;
+        width: 80%;
     }
 
 }
